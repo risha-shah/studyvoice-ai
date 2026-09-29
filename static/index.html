@@ -3,25 +3,112 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>StudyVoice</title>
+  <meta name="description" content="StudyVoice is a voice-first AI study assistant built with Python, JavaScript, REST APIs and LLMs.">
+  <title>StudyVoice — Voice-first AI Study Assistant</title>
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-  <main class="card">
-    <div class="eyebrow">PERSONAL AI PROJECT</div>
-    <h1>StudyVoice</h1>
-    <p>A voice-first AI study assistant for quick course questions.</p>
-    <div id="status">Ready</div>
-    <div class="row">
-      <button id="talkBtn">🎙 Start talking</button>
-      <button id="stopBtn">■ Stop voice</button>
-    </div>
-    <textarea id="question" rows="4" placeholder="Ask a course question..."></textarea>
-    <button id="sendBtn" class="full">Ask StudyVoice</button>
-    <section>
-      <h3>AI response</h3>
-      <div id="response">Your answer will appear here.</div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="shell">
+    <nav class="nav">
+      <a class="brand" href="#">StudyVoice<span>.</span></a>
+      <div class="nav-right">
+        <span class="pill"><i></i> Voice AI</span>
+        <a href="https://github.com/risha-shah/studyvoice-ai" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">PERSONAL AI PROJECT · 2026</div>
+        <h1>Ask it out loud.<br><span>Learn it faster.</span></h1>
+        <p>StudyVoice turns spoken questions into concise, conversational explanations — so studying feels less like searching and more like talking to a tutor.</p>
+        <div class="hero-actions">
+          <button id="demoBtn" class="primary">▶ Watch demo</button>
+          <a class="secondary" href="#assistant">Try it yourself</a>
+        </div>
+        <div class="stack">
+          <span>Python</span><span>JavaScript</span><span>Flask</span><span>REST APIs</span><span>LLMs</span><span>Web Speech API</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-top"><span>LIVE PIPELINE</span><span class="live-dot">● online</span></div>
+        <div class="pipeline">
+          <div class="pipe-step"><b>01</b><span>Speech<br>capture</span></div>
+          <div class="arrow">→</div>
+          <div class="pipe-step"><b>02</b><span>Intent +<br>LLM</span></div>
+          <div class="arrow">→</div>
+          <div class="pipe-step"><b>03</b><span>Voice<br>response</span></div>
+        </div>
+        <div class="metric-grid">
+          <div><strong>&lt; 1s</strong><span>voice capture</span></div>
+          <div><strong>3</strong><span>pipeline stages</span></div>
+          <div><strong>24/7</strong><span>demo mode</span></div>
+        </div>
+      </div>
     </section>
+
+    <section id="assistant" class="workspace">
+      <div class="workspace-head">
+        <div>
+          <div class="eyebrow">INTERACTIVE ASSISTANT</div>
+          <h2>Talk to StudyVoice</h2>
+        </div>
+        <div id="status" class="status"><span></span> Ready</div>
+      </div>
+
+      <div class="conversation">
+        <div class="voice-panel">
+          <div id="orb" class="orb">
+            <div class="orb-core">🎙</div>
+            <div class="ring ring-one"></div>
+            <div class="ring ring-two"></div>
+          </div>
+          <div id="wave" class="wave" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <p id="voiceHint">Tap the microphone and ask a question</p>
+          <div class="voice-actions">
+            <button id="talkBtn" class="primary compact">🎙 Start talking</button>
+            <button id="stopBtn" class="ghost compact">■ Stop</button>
+          </div>
+        </div>
+
+        <div class="chat-panel">
+          <div class="label-row"><label for="question">YOUR QUESTION</label><span>⌘ + Enter</span></div>
+          <textarea id="question" rows="4" placeholder="e.g. Explain generating functions like I'm seeing them for the first time"></textarea>
+          <button id="sendBtn" class="primary full">Ask StudyVoice <span>→</span></button>
+
+          <div class="answer-card">
+            <div class="answer-top"><span>STUDYVOICE</span><span id="responseTag">waiting</span></div>
+            <div id="response">Your explanation will appear here.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prompt-row">
+        <button class="prompt-chip" data-prompt="Explain generating functions in a simple way">Generating functions</button>
+        <button class="prompt-chip" data-prompt="Quiz me on root-cause analysis">Quick quiz</button>
+        <button class="prompt-chip" data-prompt="Give me a 30-second recap of REST APIs">30-sec recap</button>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="eyebrow">WHAT I WANTED TO LEARN</div>
+      <h2>More than a chatbot.</h2>
+      <p>I built StudyVoice to understand the full loop behind a real-time voice product: capture intent, call backend services, handle failures, return a useful answer, and make the interaction feel natural.</p>
+      <div class="feature-grid">
+        <article><span>01</span><h3>Voice interface</h3><p>Browser speech recognition captures natural questions without requiring typed input.</p></article>
+        <article><span>02</span><h3>API orchestration</h3><p>A Flask REST endpoint validates requests, calls the model layer, and returns structured responses.</p></article>
+        <article><span>03</span><h3>Conversational output</h3><p>Responses are optimized for listening and spoken back using browser text-to-speech.</p></article>
+        <article><span>04</span><h3>Failure-aware design</h3><p>Mock mode, API error states, health checks, and graceful voice fallbacks keep the demo usable.</p></article>
+      </div>
+    </section>
+
+    <footer>Built by Risha Shah · StudyVoice 2026 · <a href="https://github.com/risha-shah/studyvoice-ai" target="_blank" rel="noreferrer">View source ↗</a></footer>
   </main>
   <script src="/static/app.js"></script>
 </body>
