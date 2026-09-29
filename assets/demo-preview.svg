@@ -1,0 +1,28 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="28" fill="#F4F7FB"/>
+  <rect x="90" y="70" width="1020" height="580" rx="26" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="140" y="130" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#64748B" letter-spacing="2">PERSONAL AI PROJECT</text>
+  <text x="140" y="185" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800" fill="#111827">StudyVoice</text>
+  <text x="140" y="225" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#475569">Voice-first AI study assistant</text>
+
+  <rect x="140" y="265" width="920" height="58" rx="14" fill="#F1F5F9"/>
+  <circle cx="174" cy="294" r="8" fill="#22C55E"/>
+  <text x="198" y="302" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#0F172A">Listening → transcribing → reasoning → speaking</text>
+
+  <rect x="140" y="352" width="300" height="66" rx="14" fill="#111827"/>
+  <text x="184" y="392" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="white">🎙 Start talking</text>
+  <rect x="456" y="352" width="220" height="66" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="504" y="392" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#334155">■ Stop voice</text>
+
+  <rect x="140" y="448" width="920" height="72" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="170" y="478" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#64748B">You asked</text>
+  <text x="170" y="503" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#111827">“Explain generating functions in simple terms.”</text>
+
+  <rect x="140" y="540" width="920" height="76" rx="14" fill="#F8FAFC"/>
+  <text x="170" y="570" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#64748B">StudyVoice</text>
+  <text x="170" y="598" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111827">A generating function packages a sequence into a power series so coefficients can encode counts or weights.</text>
+
+  <rect x="816" y="142" width="244" height="88" rx="18" fill="#111827"/>
+  <text x="846" y="176" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#94A3B8">DEMO MODE</text>
+  <text x="846" y="206" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="white">No API key needed</text>
+</svg>
