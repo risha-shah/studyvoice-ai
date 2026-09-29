@@ -4,9 +4,11 @@ A polished personal AI project that lets students ask questions out loud, routes
 
 > Built to explore the same core product loop behind production voice agents: **capture intent → call backend systems → generate a useful response → return it naturally → handle failures gracefully.**
 
-## Demo
+## Demo preview
 
-The app includes an **interactive demo mode**. Click **Watch demo** on the landing page and StudyVoice will simulate the full voice workflow end to end:
+![StudyVoice demo preview](assets/demo-preview.svg)
+
+The app also includes an **interactive demo mode**. Click **Watch demo** on the landing page and StudyVoice will simulate the full voice workflow end to end:
 
 1. Capture a spoken study question
 2. Convert the question into text
@@ -155,6 +157,8 @@ studyvoice-ai/
 ├── .env.example
 ├── .gitignore
 ├── README.md
+├── assets/
+│   └── demo-preview.svg
 └── static/
     ├── index.html
     ├── app.js
